@@ -17,8 +17,8 @@ char **getFileList(int *numFiles);
 int runConnectionP(int controlSocket, char *commandTag, int *dataPort, char* filename);
 void runConnectionQ(int dataSocket, char *commandTag, char *filename);
 
-/*Server side program: The server is run in main
-and runs a loop of a client connection accept, followed by,
+/*Server side program: The server is run in main and
+runs a loop of a client connection accept, followed by,
 if the client sends a valid command, an attempt to connect to the dataPort
 */
 int main(int argc, char **argv)

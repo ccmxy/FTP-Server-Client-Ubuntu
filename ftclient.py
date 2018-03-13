@@ -44,7 +44,6 @@ def runConnectionP():
 
     #Else if  error message  was sent...
     else:
-        #Print the error
         print inData
         controlSocket.close()
         print "Control connection closed"
