@@ -14,10 +14,10 @@ specified by the client.
 gcc ftserver.c -o ftserver
 
 ## Usage
-Start with the server:    
+First start the server:    
  ./ftserver SERVER_PORT
 
-Repeatedly enter any combination of these two commands on the client until there is a terminating signal (SIGINT) on the server side:
+Then on the client side, repeatedly enter any combination of these two commands on the client until there is a terminating signal (SIGINT) on the server side:
 
 To get a file that is in the directory that the server is in and save it to the directory that the client is in:
 python ftclient.py SERVER_HOST SERVER_PORT -g FILENAME DATA_PORT
